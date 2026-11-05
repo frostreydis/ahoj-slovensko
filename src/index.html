@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ahoj, Slovensko — словацька для життя у Словаччині</title>
+<meta name="description" content="Тренажер словацької мови з нуля до B2 для україномовних: уроки, вправи, слова, озвучення.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#181e29" media="(prefers-color-scheme: dark)">
+<!-- manifest, іконки й sw.js створює build.mjs у docs/; у src/ (розробка) їх немає, і це нормально -->
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Ahoj, SK">
+<!-- Онлайн-голос (core.js → SK.TTS) не має отримувати адресу сторінки -->
+<meta name="referrer" content="no-referrer">
+<!-- Іконку вкладки views2.js → init() малює з прапора в шапці нижче -->
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Прапор Словаччини (закон 63/1993 Z. z.): 2:3, щит заввишки 1/2 висоти, однаково віддалений від верху, низу й древка, біла облямівка 1/100 довжини -->
+<header class="top"><div class="top-inner"><a class="brand" href="#/today" style="text-decoration:none;color:inherit"><span class="flag" title="Slovensko"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" aria-hidden="true"><rect width="900" height="600" fill="#ee1c25"/><rect width="900" height="400" fill="#0b4ea2"/><rect width="900" height="200" fill="#fff"/><path d="M150 150H390V300C390 390 330 425 270 450C210 425 150 390 150 300Z" fill="#fff" stroke="#fff" stroke-width="18"/><clipPath id="sk-shield"><path d="M150 150H390V300C390 390 330 425 270 450C210 425 150 390 150 300Z"/></clipPath><g clip-path="url(#sk-shield)"><rect x="150" y="150" width="240" height="300" fill="#ee1c25"/><path fill="#fff" d="M259 176h22v200h-22zM228 212h84v20h-84zM204 262h132v22H204z"/><g fill="#0b4ea2"><circle cx="270" cy="384" r="48"/><circle cx="190" cy="412" r="48"/><circle cx="350" cy="412" r="48"/><rect x="150" y="400" width="240" height="60"/></g></g></svg></span>Ahoj, Slovensko</a><nav class="tabs" id="nav"></nav></div></header>
+<main id="view"><div class="card">Завантаження…</div></main>
+<script src="core.js"></script>
+<script src="gen.js"></script>
+<script src="exercises.js"></script>
+<script src="data/lessons-a0.js"></script>
+<script src="data/lessons-a1a.js"></script>
+<script src="data/lessons-a1b.js"></script>
+<script src="data/reference.js"></script>
+<script src="data/program.js"></script>
+<script src="data/resources.js"></script>
+<script src="views.js"></script>
+<script src="views2.js"></script>
+</body>
+</html>
